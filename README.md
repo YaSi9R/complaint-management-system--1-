@@ -38,8 +38,8 @@ A full-stack web application built with Next.js, MongoDB, and React that allows 
 
 ### Demo Accounts
 For testing purposes, you can use these demo accounts:
-- **Admin**: admin@example.com / admin123
-- **User**: user@example.com / user123
+- **Admin**: yasirali9720@gmail.com / 123123
+- **User**: yasir.mohd9720@gmail.com / 123123
 
 ### Security Features
 - HTTP-only cookies for token storage
@@ -51,10 +51,7 @@ For testing purposes, you can use these demo accounts:
 ### Environment Variables
 Add these additional environment variables to your `.env.local`:
 
-\`\`\`env
-# JWT Secret (change this in production!)
-JWT_SECRET=your-super-secret-jwt-key-change-in-production
-\`\`\`
+
 
 ### Authentication Flow
 1. **Registration**: Users can register as either 'user' or 'admin'
@@ -81,8 +78,8 @@ JWT_SECRET=your-super-secret-jwt-key-change-in-production
 
 ### 1. Clone the Repository
 \`\`\`bash
-git clone <repository-url>
-cd complaint-management-system
+git clone <https://github.com/YaSi9R/complaint-management-system--1->
+cd complaint-management-system (1)
 \`\`\`
 
 ### 2. Install Dependencies
@@ -95,7 +92,7 @@ Create a `.env.local` file in the root directory:
 
 \`\`\`env
 # MongoDB Connection
-MONGODB_URI=mongodb://localhost:27017/complaint-system
+MONGODB_URI=<"use your dummy>
 
 # Email Configuration (Gmail example)
 SMTP_HOST=smtp.gmail.com
@@ -126,10 +123,7 @@ JWT_SECRET=your-super-secret-jwt-key-change-in-production
 2. Start MongoDB service
 3. Use connection string: `mongodb://localhost:27017/complaint-system`
 
-#### Option B: MongoDB Atlas (Cloud)
-1. Create account at [MongoDB Atlas](https://www.mongodb.com/atlas)
-2. Create a new cluster
-3. Get connection string and replace in `MONGODB_URI`
+
 
 ### 6. Run the Application
 \`\`\`bash
@@ -251,4 +245,4 @@ The system sends HTML formatted emails for:
 
 ## License
 
-This project is licensed under the MIT License.
+This project is created to complete my assignment 
