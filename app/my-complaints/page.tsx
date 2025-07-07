@@ -103,13 +103,15 @@ function MyComplaintsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 p-4">
+    <div className="min-h-screen w-full bg-gray-50 p-4">
       <div className="max-w-6xl mx-auto">
+        {/* Responsive Header Section */}
         <div className="mb-6">
-          <div className="flex items-center justify-between mb-4">
-            <div className="flex items-center gap-4">
+          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            {/* Left Part */}
+            <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-4">
               <Link href="/">
-                <Button variant="outline" size="sm">
+                <Button variant="outline" size="sm" className="w-fit">
                   <ArrowLeft className="h-4 w-4 mr-2" />
                   Back to Home
                 </Button>
@@ -119,7 +121,7 @@ function MyComplaintsPage() {
                 <p className="text-gray-600">Welcome, {user?.name}</p>
               </div>
             </div>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 max-[460px]:hidden">
               <div className="flex items-center gap-2 text-sm text-gray-600">
                 <User className="h-4 w-4" />
                 {user?.email}
